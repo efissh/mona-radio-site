@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Mona Radio</title>
+  <meta name="description" content="What Mona Radio stores on your devices, who it connects to, and what it never does.">
+  <meta name="theme-color" content="#0B1020">
+  <link rel="canonical" href="https://monaradio.com/privacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mona Radio">
+  <meta property="og:title" content="Privacy Policy — Mona Radio">
+  <meta property="og:description" content="What Mona Radio stores on your devices, who it connects to, and what it never does.">
+  <meta property="og:url" content="https://monaradio.com/privacy/">
+  <meta property="og:image" content="https://monaradio.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mona Radio — Your radio. Everywhere.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/brand/mona-radio-simplified.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/brand/mona-radio-app-icon.png">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script src="../assets/js/menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand-link" href="../" aria-label="Mona Radio home"><img class="brand-horizontal" src="../assets/brand/mona-radio-horizontal.png" width="322" height="76" alt="Mona Radio"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="../radios/">Radios</a>
+        <a href="../setup/">Setup</a>
+        <a href="../support/">Support</a>
+        <a class="nav-cta" href="../#get">Get Mona Radio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="shell">
+        <p class="eyebrow">Privacy</p>
+        <h1>Mona Radio Privacy Policy</h1>
+        <p class="lede">This policy explains what Mona Radio stores on your devices, what it sends to radios and optional services you choose, and how that differs from information received by Mona Apps.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="shell">
+        <div class="prose">
+          <div class="card" style="margin-bottom:48px">
+            <p><strong>Last updated:</strong> October 10, 2026</p>
+            <p><strong>Applies to:</strong> Mona Radio 1.6.2 on supported Apple platforms. Features and permissions differ by platform. Apple TV is receive-only, and Apple Watch does not transmit.</p>
+            <p><strong>Developer:</strong> Mona Apps</p>
+            <p><strong>Contact:</strong> <a href="mailto:support@monaradio.com">support@monaradio.com</a></p>
+          </div>
+
+          <h2 id="summary">1. The short version</h2>
+          <ul>
+            <li>No Mona Apps account or sign-in is required. There is no advertising or cross-app tracking. Optional third-party services may require their own accounts.</li>
+            <li>No third-party analytics, advertising or crash-reporting SDK.</li>
+            <li>No Mona Apps server. Mona Radio does not send your information to us.</li>
+            <li>Mona Radio connects to radios, paired devices, and optional third-party services or apps that you configure. Connecting a log service may transmit account information and contacts directly to that service.</li>
+            <li>Saved radio and service credentials and pairing keys use the device’s Keychain. Credentials needed for authentication are sent directly to the radio or service you configure, not to a Mona Apps server.</li>
+          </ul>
+
+          <h2 id="network">2. Who Mona Radio connects to</h2>
+          <h3>Your radio</h3>
+          <p>Mona Radio connects to the radio address you enter, or to a radio plugged into your Mac by USB. It uses that connection to sign in to the radio, read its state, receive its spectrum and audio, and send the changes you ask for.</p>
+          <p>Network radios must be on your own network. Mona Radio accepts private and local addresses, and addresses reached through your own VPN; it refuses public internet addresses. Mona Radio does not provide or operate a VPN. Traffic to the radio uses the radio’s own protocol, so use a network you trust.</p>
+          <h3>Your Macs, with Mona Relay (Preview)</h3>
+          <p>Mona Relay lets a Mac share the radio connected to it with your other Apple devices on the same local network. See <a href="#relay">section 3</a>.</p>
+          <h3>Other apps, only if you turn it on</h3>
+          <p>Mona Radio can send radio status, FT8 decodes and logged contacts to compatible amateur-radio software. This is off until you turn it on.</p>
+          <p>You choose where it goes. The destination is the address you enter: by default this device, but it may be another device on your network or a remote address. Mona Apps does not choose, provide or operate that destination, and never receives what is sent.</p>
+          <p>What is sent includes the frequency and mode, decoded messages, your callsign and grid square, and contacts you log. It is sent as plain UDP, without encryption, so anyone able to observe the network path can read it. Keep the destination on this device or your own local network where you can; for anything else, use a network you trust or your own VPN.</p>
+          <h3>Optional online log and callsign services</h3>
+          <p>If you connect a service in Log Services, Mona Radio communicates directly with that service. Available integrations include QRZ Logbook, LoTW, eQSL and HRDLog.net, as well as other services shown in the app. Callsign lookup integrations are separate from log synchronization.</p>
+          <p>Depending on the service and action, transmitted information may include your account identifier, password or API/upload key, callsign, grid square, and QSO details such as contacted callsigns, dates and times, frequency, mode and reports. Mona may download your log or confirmations and synchronize new or edited contacts while that service remains connected, according to its capabilities. Nothing is sent to a log service before you connect it.</p>
+          <p>Log-service network requests use HTTPS. Service providers receive these requests directly and handle them under their own terms and privacy practices. This is operator-enabled transmission to the selected provider, not collection by Mona Apps. LoTW signing and upload depend on the supported platform and TrustedQSL workflow; Mona does not provide an ARRL account or certificate.</p>
+          <h3>Local discovery</h3>
+          <p>Mona Radio can discover compatible network radios and Macs sharing radios with Mona Relay. Discovery stays on the local network. Mona Apps does not operate a server that receives your radio sessions or logbook synchronization traffic.</p>
+
+          <h2 id="relay">3. Mona Relay (Preview)</h2>
+          <p>Sharing is off until you turn it on in Mona Radio on your Mac. While it is on:</p>
+          <ul>
+            <li>your Mac announces itself on your local network using its computer name, so your other devices can find it;</li>
+            <li>a device that wants to connect sends its device name and platform, and you approve it on the Mac after checking that a six-digit verification code matches;</li>
+            <li>approved devices receive the radio’s state, spectrum, waterfall and receive audio — never radio passwords or addresses — over an encrypted connection (TLS 1.3) that stays on your local network;</li>
+            <li>devices on Mona Relay cannot change or transmit on the radio.</li>
+          </ul>
+          <p>Pairing keys are stored in the Keychain on each device, on that device only and not synchronised. You can revoke one device, revoke all devices, or reset your Mac’s Mona Relay identity at any time; a device can also forget a Mac.</p>
+
+          <h2 id="stored">4. What Mona Radio stores on your device</h2>
+          <ul>
+            <li><strong>Your radios:</strong> the name you give each one, its model, address or USB settings, when it last connected, and a short fingerprint so Mona Radio can recognise the same radio at a new address.</li>
+            <li><strong>Radio passwords:</strong> your radio’s network user name and password, in the Keychain, available on this device only and not synchronised to iCloud Keychain.</li>
+            <li><strong>Mona Relay pairing</strong> and a key used to recognise USB radios, in the Keychain, on this device only.</li>
+            <li><strong>Your callsign and grid square,</strong> if you enter them. Mona Radio does not use your location; you type your grid square.</li>
+            <li><strong>Your logbook:</strong> the contacts you log, with details such as callsigns, times, frequency, mode, signal reports, grid squares and QSL status. It is stored on your device. If you connect a log service, selected records and confirmations can also be transferred or synchronized with that service. You can import and export ADIF files that you choose.</li>
+            <li><strong>Service settings and credentials:</strong> configured service accounts, synchronization preferences, progress and queued operations; saved service secrets use the device’s Keychain.</li>
+            <li><strong>Settings,</strong> including whether transmit is enabled and locally stored purchase-entitlement state.</li>
+            <li><strong>Technical history</strong> for troubleshooting: recent connection stages, counters and error codes, retained locally within bounded history limits. Diagnostic export is designed to redact sensitive values; review the export before sharing it. See <a href="#diagnostics">section 7</a>.</li>
+          </ul>
+          <p>Decoded FT8 messages are kept in memory while the app runs. Deleting Mona Radio removes app-container data subject to normal device backup and restore behavior. Keychain credentials and records already uploaded to third-party services may remain; manage those separately in your device or service settings.</p>
+
+          <h2 id="permissions">5. Permissions</h2>
+          <ul>
+            <li><strong>Local Network</strong> — to reach your radio and, with Mona Relay, your Macs.</li>
+            <li><strong>Microphone</strong> — for microphone-based Listen decoding and voice or digital-voice transmission when you enable the corresponding features. On a Mac, receiving audio from a radio connected by USB also uses this permission.</li>
+            <li><strong>On Mac:</strong> access to USB and serial devices for radios connected by USB, and to files you choose for logbook import and export. When Mona Relay sharing is on, the Mac accepts connections from your paired devices.</li>
+          </ul>
+          <p>Mona Radio does not request access to your location, camera, photos, contacts or Bluetooth. If you decline a permission, the features that need it are unavailable; you can change this later in Settings.</p>
+
+          <h2 id="audio">6. Audio and transmission</h2>
+          <p>Mona Radio processes receive audio and, for features you enable, microphone input or recordings you choose. Mona Apps does not receive this audio through an in-app analytics or telemetry service.</p>
+          <p>On compatible radios, Mona Radio can send voice or digital-mode transmissions when you deliberately enable and operate the relevant controls. Audio or generated signals are sent to the configured radio. Apple TV and Apple Watch do not transmit. Control and transmit capabilities vary by radio model, connection route, platform and validation status.</p>
+          <p>Amateur radio is public by nature: anything you transmit, including your callsign and grid square in FT8, can be received by anyone.</p>
+
+          <h2 id="diagnostics">7. Diagnostics</h2>
+          <p>Mona Radio can export a diagnostics file when you choose to, for example to attach to a support email. It contains your device model, operating-system and app version, connection stages, counters and error codes. The export is designed to redact credentials and other sensitive values. Review its contents before sharing. Mona Apps receives an export only if you deliberately send it to us, for example in a support message.</p>
+          <p>Mona Radio also writes ordinary technical messages to your device’s system log, which the app does not upload. If you have chosen to share analytics with app developers in your device’s settings, Apple may provide Mona Apps with crash reports and aggregate diagnostics under Apple’s own terms. That choice is yours and Apple’s, not Mona Radio’s.</p>
+
+          <h2 id="apple">8. Apple services and purchases</h2>
+          <p>Downloading, updating and running Mona Radio involves Apple services such as the App Store, which operate under Apple’s terms and privacy policy. Mona Radio Pro is an optional one-time in-app purchase on supported platforms. Apple processes payments, purchase verification and restoration under its own terms. Mona stores entitlement information needed to unlock purchased features; Mona Apps does not receive your card details through the app.</p>
+
+          <h2 id="children">9. Children</h2>
+          <p>Mona Radio is a tool for amateur-radio operators. Mona Apps does not collect personal information from anyone, including children.</p>
+
+          <h2 id="choices">10. Your choices</h2>
+          <ul>
+            <li>Remove a radio from Mona Radio at any time.</li>
+            <li>Turn off Mona Relay sharing, revoke paired devices, or reset your Mac’s Mona Relay identity.</li>
+            <li>Disconnect optional log services and turn off sending to other apps or transmitting at any time. Disconnecting stops future synchronization but does not remove records already sent to a provider.</li>
+            <li>Export your logbook, or delete Mona Radio to remove its data.</li>
+          </ul>
+
+          <h2 id="contact">11. Contact and changes</h2>
+          <p>If you email us, Mona Apps receives what you choose to include so we can reply. Please never send your radio, Wi-Fi or account passwords.</p>
+          <p>If a future version changes how information is handled, this page will be updated and the date above will change.</p>
+          <p style="margin-top:20px"><strong>Mona Apps</strong><br><a href="mailto:support@monaradio.com">support@monaradio.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <a class="brand-link brand-link--footer" href="../" aria-label="Mona Radio home"><img class="brand-horizontal" src="../assets/brand/mona-radio-horizontal.png" width="322" height="76" alt="Mona Radio"></a>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="../radios/">Supported Radios</a>
+          <a href="../setup/">Setup</a>
+          <a href="../support/">Support</a>
+          <a href="./" aria-current="page">Privacy</a>
+          <a href="../contact/">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Mona Apps</p>
+        <p>Mona Radio is independent software, not affiliated with any radio manufacturer. Model names belong to their owners. Apple, iPhone, iPad, Mac, Apple&nbsp;Watch and Apple&nbsp;TV are trademarks of Apple&nbsp;Inc.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
