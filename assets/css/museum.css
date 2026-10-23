@@ -52,3 +52,17 @@
 @media(max-width:1000px){.museum-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.museum-hero{padding:68px 0}.museum-hero-visual{margin-top:40px}.museum-heading{display:block}.museum-heading>p{margin-top:20px}.era-grid{grid-template-columns:1fr}.museum-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.references-layout,.museum-teaser-layout{grid-template-columns:1fr}.museum-sections .shell{gap:16px}.museum-sections a{font-size:10px}}
 @media(max-width:470px){.museum-grid{grid-template-columns:1fr}.hero-links .button{width:100%;justify-content:center}.era-copy{padding:23px}.museum-section{padding:68px 0}.museum-search{flex:1}.museum-heading h2{font-size:39px}}
+
+/* Heritage Hall: dated classic exhibits with provenance (separate from compatibility). */
+.museum-classics{background:#101726;border-top:1px solid var(--line)}
+.classic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.classic-card{display:grid;grid-template-columns:43% 1fr;background:linear-gradient(135deg,#1e2634,#151b2a);border:1px solid rgba(203,167,114,.2);border-radius:18px;overflow:hidden;min-height:235px}
+.classic-art{background:#101a27;display:flex;align-items:stretch}
+.classic-art img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.classic-text{padding:25px;display:flex;flex-direction:column;align-items:flex-start}
+.classic-text h3{font-size:clamp(23px,2.3vw,31px);margin:15px 0 8px;letter-spacing:-.035em}
+.classic-text>p:not(.catalog-number){color:var(--text-2);font-size:14px}
+.classic-text a{font-size:13px;font-weight:700;margin-top:auto;padding-top:19px;color:#b7dcf0}
+.museum-classics .museum-disclaimer{margin-top:28px}
+@media(max-width:870px){.classic-grid{grid-template-columns:1fr}}
+@media(max-width:470px){.classic-card{grid-template-columns:1fr}.classic-art img{min-height:0;max-height:210px}.classic-text{padding:24px}.museum-sections .shell{column-gap:14px;row-gap:10px}}
