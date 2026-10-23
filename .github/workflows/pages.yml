@@ -26,7 +26,7 @@ jobs:
       - name: Prepare public artifact
         run: |
           mkdir _site
-          cp -R index.html privacy support radios setup contact assets CNAME .nojekyll _site/
+          cp -R index.html privacy support radios museum setup contact assets CNAME .nojekyll _site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

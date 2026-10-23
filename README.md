@@ -14,7 +14,7 @@ Update workflow: edit and review site/ in the authoring repository, run its
 local link checker, and commit there. Run tools/prepare-pages.py with this
 checkout as its destination, review the generated diff, commit it here and
 push main after publication authorization. .github/workflows/pages.yml uploads
-only the six routes and assets; repository documentation is not deployed.
+only the site routes and assets; repository documentation is not deployed.
 
 GitHub Pages source: GitHub Actions. Custom domain: monaradio.com. The CNAME
 file records the intended domain; Actions publishing still requires the
